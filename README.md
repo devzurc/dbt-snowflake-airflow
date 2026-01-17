@@ -1,31 +1,15 @@
 # Engenharia de Dados com Apache Airflow, Snowflake e dbt
 Repositório do projeto "Engenharia de Dados com Apache Airflow, Snowflake e dbt". Este projeto é baseado no seguinte Guia Snowflake para engenharia de dados com Apache Airflow, Snowflake e dbt.
 
-Vale ressaltar que esse repo foi criado usando como base o repo abaixo:
-
-```
-https://github.com/jacob-mennell/snowflakeAirflowDBT
-```
-
-## Vídeo tutorial
-
-Link: https://youtu.be/mBrk5hvqc84
-
 ## Passo a passo contido neste repo:
-Passo 1: Criar a conta no Snowflake 
-
-Passo 2: Instalar o Docker
-
-Passo 3: Conectar o dbt no Snowflake
-
-Passo 4: Ingerir arquivo CSV no Snowflake com o dbt
-
-Passo 5: Crie a imagem do dbt em um container
-
-Passo 6: Orquestrar o container do dbt conectado ao Snowflake com o Airflow
+* Passo 1: Criar a conta no Snowflake 
+* Passo 2: Instalar o Docker
+* Passo 3: Conectar o dbt no Snowflake
+* Passo 4: Ingerir arquivo CSV no Snowflake com o dbt
+* Passo 5: Crie a imagem do dbt em um container
+* Passo 6: Orquestrar o container do dbt conectado ao Snowflake com o Airflow
 
 ## Siga as instruções abaixo para conseguir realizar todos os passos
-
 
 ## Arquitetura
 ![image](assets/architecture-dbt-snowflake-airflow.png)
