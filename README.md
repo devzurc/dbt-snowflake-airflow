@@ -60,7 +60,7 @@ Entre na pasta ```scripts``` e use o arquivo ```snowflake-setup.sql``` como base
 ### Como utilizar o projeto?
 Faça clone com o comando:
 ```
-git clone https://github.com/wlcamargo/dbt-snowflake-airflow.git
+git clone https://github.com/devzurc/dbt-snowflake-airflow.git
 ```
 Entre na pasta do projeto
 ```
@@ -79,7 +79,7 @@ Resultado esperado:
 ## Como acessar o Airflow?
 Digite no navegador:
 ```
-localhost:8081
+localhost:8080
 ```
 
 ---------------------------------------------
@@ -180,21 +180,15 @@ As tabelas processadas pelo dbt, foram materializadas como views, conforme exemp
 
 ![image](assets/transformed_table_snowflake.png)
 
-
 ## Conclusão
 Se você chegou até aqui, parabéns! Já tens um projeto de exemplo para orquestrar o dbt conectado no Snowflake com o Airflow.
 
-
 ## 📚 Referências
-
-- [Repo usado como base](https://github.com/jacob-mennell/snowflakeAirflowDBT)
-
 - [Exploring dbt with Snowflake](https://www.entechlog.com/blog/kafka/exploring-dbt-with-snowflake/)
-
 - [Snowflake Guide: Data Engineering with Apache Airflow](https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow/index.html)
 
 
 ## Developer
 | Desenvolvedor      | LinkedIn                                   | Email                        | Portfólio                              |
 |--------------------|--------------------------------------------|------------------------------|----------------------------------------|
-| Wallace Camargo    | [LinkedIn](https://www.linkedin.com/in/wallace-camargo-35b615171/) | wallacecpdg@gmail.com        | [Portfólio](https://wlcamargo.github.io/)   |
+| Lucas Cruz    | [LinkedIn](https://www.linkedin.com/in/lucas-cruz/) | dev.lucascruz@gmail.com        | [Portfólio](https://devzurc.github.io/portfolio)   |
