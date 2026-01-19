@@ -1,31 +1,15 @@
 # Engenharia de Dados com Apache Airflow, Snowflake e dbt
 Repositório do projeto "Engenharia de Dados com Apache Airflow, Snowflake e dbt". Este projeto é baseado no seguinte Guia Snowflake para engenharia de dados com Apache Airflow, Snowflake e dbt.
 
-Vale ressaltar que esse repo foi criado usando como base o repo abaixo:
-
-```
-https://github.com/jacob-mennell/snowflakeAirflowDBT
-```
-
-## Vídeo tutorial
-
-Link: https://youtu.be/mBrk5hvqc84
-
 ## Passo a passo contido neste repo:
-Passo 1: Criar a conta no Snowflake 
-
-Passo 2: Instalar o Docker
-
-Passo 3: Conectar o dbt no Snowflake
-
-Passo 4: Ingerir arquivo CSV no Snowflake com o dbt
-
-Passo 5: Crie a imagem do dbt em um container
-
-Passo 6: Orquestrar o container do dbt conectado ao Snowflake com o Airflow
+* Passo 1: Criar a conta no Snowflake 
+* Passo 2: Instalar o Docker
+* Passo 3: Conectar o dbt no Snowflake
+* Passo 4: Ingerir arquivo CSV no Snowflake com o dbt
+* Passo 5: Crie a imagem do dbt em um container
+* Passo 6: Orquestrar o container do dbt conectado ao Snowflake com o Airflow
 
 ## Siga as instruções abaixo para conseguir realizar todos os passos
-
 
 ## Arquitetura
 ![image](assets/architecture-dbt-snowflake-airflow.png)
@@ -76,7 +60,7 @@ Entre na pasta ```scripts``` e use o arquivo ```snowflake-setup.sql``` como base
 ### Como utilizar o projeto?
 Faça clone com o comando:
 ```
-git clone https://github.com/wlcamargo/dbt-snowflake-airflow.git
+git clone https://github.com/devzurc/dbt-snowflake-airflow.git
 ```
 Entre na pasta do projeto
 ```
@@ -87,22 +71,12 @@ Rode o container do Airflow com o comando:
 cd airflow
 docker compose up -d
 ```
-Resultado esperado:
-
-![image](assets/ariflow-ok.png)
-
 
 ## Como acessar o Airflow?
 Digite no navegador:
 ```
-localhost:8081
+localhost:8080
 ```
-
----------------------------------------------
-
-Exemplo Airflow UI:
-
-![image](assets/sample-airflow-ui.png)
 
 ---------------------------------------------
 
@@ -140,10 +114,6 @@ pip install -r requirements.txt
 dbt --version
 ```
 
-Resultado esperado:
-
-![image](assets/dbt-ok.png)
-
 
 ## Como configurar o dbt para conectar no Snowflake?
 Entre na pasta ```src/dbt``` e altere o nome do arquivo ```example_profiles.yml``` para ```profiles.yml```
@@ -156,21 +126,12 @@ cd src/dbt
 dbt debug
 ```
 
-Resultado esperado:
-
-![image](assets/connection-dbt-snow-ok.png)
-
 ## Como ingerir dados no dbt?
 Use o comando abaixo:
 ```
 cd src/dbt
 dbt seed
 ```
-
-Resultado esperado:
-
-![image](assets/dbt-seed.png)
-
 ## Como criar a imagem Docker do dbt?
 ```
 cd src
@@ -196,21 +157,15 @@ As tabelas processadas pelo dbt, foram materializadas como views, conforme exemp
 
 ![image](assets/transformed_table_snowflake.png)
 
-
 ## Conclusão
 Se você chegou até aqui, parabéns! Já tens um projeto de exemplo para orquestrar o dbt conectado no Snowflake com o Airflow.
 
-
 ## 📚 Referências
-
-- [Repo usado como base](https://github.com/jacob-mennell/snowflakeAirflowDBT)
-
 - [Exploring dbt with Snowflake](https://www.entechlog.com/blog/kafka/exploring-dbt-with-snowflake/)
-
 - [Snowflake Guide: Data Engineering with Apache Airflow](https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow/index.html)
 
 
 ## Developer
 | Desenvolvedor      | LinkedIn                                   | Email                        | Portfólio                              |
 |--------------------|--------------------------------------------|------------------------------|----------------------------------------|
-| Wallace Camargo    | [LinkedIn](https://www.linkedin.com/in/wallace-camargo-35b615171/) | wallacecpdg@gmail.com        | [Portfólio](https://wlcamargo.github.io/)   |
+| Lucas Cruz    | [LinkedIn](https://www.linkedin.com/in/lucas-cruz/) | dev.lucascruz@gmail.com        | [Portfólio](https://devzurc.github.io/portfolio)   |
