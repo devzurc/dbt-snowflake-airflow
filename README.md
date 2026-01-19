@@ -71,22 +71,12 @@ Rode o container do Airflow com o comando:
 cd airflow
 docker compose up -d
 ```
-Resultado esperado:
-
-![image](assets/ariflow-ok.png)
-
 
 ## Como acessar o Airflow?
 Digite no navegador:
 ```
 localhost:8080
 ```
-
----------------------------------------------
-
-Exemplo Airflow UI:
-
-![image](assets/sample-airflow-ui.png)
 
 ---------------------------------------------
 
@@ -124,10 +114,6 @@ pip install -r requirements.txt
 dbt --version
 ```
 
-Resultado esperado:
-
-![image](assets/dbt-ok.png)
-
 
 ## Como configurar o dbt para conectar no Snowflake?
 Entre na pasta ```src/dbt``` e altere o nome do arquivo ```example_profiles.yml``` para ```profiles.yml```
@@ -140,21 +126,12 @@ cd src/dbt
 dbt debug
 ```
 
-Resultado esperado:
-
-![image](assets/connection-dbt-snow-ok.png)
-
 ## Como ingerir dados no dbt?
 Use o comando abaixo:
 ```
 cd src/dbt
 dbt seed
 ```
-
-Resultado esperado:
-
-![image](assets/dbt-seed.png)
-
 ## Como criar a imagem Docker do dbt?
 ```
 cd src
