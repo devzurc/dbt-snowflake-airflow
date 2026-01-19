@@ -11,7 +11,7 @@ with DAG(
     dag_id="dbt-snowflake-process",
     default_args=default_args,
     start_date=datetime(2026, 1, 17),
-    schedule_interval="@hourly",
+    schedule="@hourly",
     catchup=False,
     tags=["dbt", "snowflake"]
 ) as dag:
@@ -21,9 +21,8 @@ with DAG(
         image="dbt-snowflake",
         container_name="transform",
         api_version="auto",
-        auto_remove=True,
-        command="dbt run --models transform --peofiles-dir .",
-        docker_url="tcp://docker-proxy:2375",
+        auto_remove='force',
+        command="dbt run --select transform --profiles-dir .",
         network_mode="airflow_default",
         mount_tmp_dir=False,
     )
@@ -33,9 +32,8 @@ with DAG(
         image="dbt-snowflake",
         container_name="analysis",
         api_version="auto",
-        auto_remove=True,
-        command="dbt run --models analysis --profiles-dir .",
-        docker_url="tcp://docker-proxy:2375",
+        auto_remove='force',
+        command="dbt run --select analysis --profiles-dir .",
         network_mode="airflow_default",
         mount_tmp_dir=False,
     )
