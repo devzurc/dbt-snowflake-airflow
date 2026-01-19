@@ -10,7 +10,7 @@ default_args = {
 with DAG(
     dag_id="dbt-snowflake-process",
     default_args=default_args,
-    start_date=datetime(2026, 1, 17)
+    start_date=datetime(2026, 1, 17),
     schedule_interval="@hourly",
     catchup=False,
     tags=["dbt", "snowflake"]
