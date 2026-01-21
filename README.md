@@ -10,7 +10,6 @@ Repositório do projeto "Engenharia de Dados com Apache Airflow, Snowflake e dbt
 * Passo 6: Orquestrar o container do dbt conectado ao Snowflake com o Airflow
 
 ## Siga as instruções abaixo para conseguir realizar todos os passos
-
 ## Arquitetura
 ![image](assets/architecture-dbt-snowflake-airflow.png)
 
